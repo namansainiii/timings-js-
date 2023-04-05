@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <button onclick="clearInterval(clock)">stop</button>
+        <p id ="showclock"></p>
+
+        <script type="text/javascript">
+            //the timings will change by itself
+
+var clock = setInterval(clocks,1000);
+
+
+function clocks(){
+    var d=new Date;
+    var naman =d.toLocaleTimeString();
+    document.getElementById('showclock').innerHTML=naman;
+}
+
+        </script>
+    </body>
+</html>
